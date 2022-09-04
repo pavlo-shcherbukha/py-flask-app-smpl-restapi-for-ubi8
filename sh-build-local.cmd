@@ -1,9 +1,9 @@
 ﻿
 echo =1===================
-docker build -t pshkxml/iit2-srvc-ubi8 .
+docker build  --file ./Dockerfile_local -t pshkxml/smplapp-srvc-ubi8 .
 
 echo tag
-docker tag pshkxml/iit2-srvc-ubi8:latest pshkxml/iit2-srvc-ubi8:1.0.4
+docker tag pshkxml/smplapp-srvc-ubi8:latest pshkxml/smplapp-srvc-ubi8:1.0.1
 
 echo =2==================
 rem docker push pshkxml/sh-ubi8-py-app:1.0.0
